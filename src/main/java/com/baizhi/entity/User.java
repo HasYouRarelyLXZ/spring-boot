@@ -1,11 +1,13 @@
 package com.baizhi.entity;
 
+import com.alibaba.fastjson.annotation.JSONField;
+
 import java.io.Serializable;
 import java.util.Date;
 
 public class User implements Serializable {
     private String id;
-
+    @JSONField(serialize = false)
     private String username;
 
     private String password;

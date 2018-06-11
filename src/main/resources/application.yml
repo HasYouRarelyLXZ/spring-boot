@@ -1,3 +1,10 @@
+server:
+  context-path: /Springboot
+  port: 9000
+  jsp-servlet:
+    init-parameters:
+      development: true
+
 spring:
   http:
     encoding:
@@ -14,9 +21,6 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
 
-server:
-  context-path: /Springboot
-  port: 8080
 mybatis:
   mapper-locations: com/baizhi/mapper/*.xml
   type-aliases-package: com.baizhi.entity

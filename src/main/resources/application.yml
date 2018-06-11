@@ -1,0 +1,22 @@
+spring:
+  http:
+    encoding:
+      charset: utf-8
+      force: true
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/springboot
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+server:
+  context-path: /Springboot
+  port: 8080
+mybatis:
+  mapper-locations: com/baizhi/mapper/*.xml
+  type-aliases-package: com.baizhi.entity
